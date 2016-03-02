@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.0"?><plugin>
+                            <extension-point id="WidenedModel" name="WidenedModel" schema="schema/WidenedModel.exsd"/>
+                            <extension-point id="WidenedModelDistance" name="WidenedModelDistance" schema="schema/WidenedModelDistance.exsd"/>
+                            <extension-point id="WidenedModelRefiner" name="WidenedModelRefiner" schema="schema/WidenedModelRefiner.exsd"/>
+                            <extension-point id="WidenedModelScorer" name="WidenedModelScorer" schema="schema/WidenedModelScorer.exsd"/>
+                            <extension-point id="WideningStopCondition" name="WideningStopCondition" schema="schema/WideningStopCondition.exsd"/>
+   
+    <extension point="org.knime.workbench.repository.nodes">
+       <node
+             category-path="/anna"
+             expert-flag="false"
+             factory-class="de.unikn.knime.stud.martin.rowdistance.RowDistanceNodeFactory"
+             id="de.unikn.knime.stud.martin.rowdistance.RowDistanceNodeFactory">
+       </node>
+       <node
+             category-path="/anna"
+             expert-flag="false"
+             factory-class="de.unikn.knime.stud.martin.simpleclustersort.SimpleClusterSortNodeFactory"
+             id="de.unikn.knime.stud.martin.simpleclustersort.SimpleClusterSortNodeFactory">
+       </node>
+       <node
+             category-path="/anna"
+             expert-flag="false"
+             factory-class="de.unikn.knime.stud.martin.centroidclustersort.CentroidClusterSortNodeFactory"
+             id="de.unikn.knime.stud.martin.centroidclustersort.CentroidClusterSortNodeFactory">
+       </node>
+       <node
+             expert-flag="false"
+             factory-class="de.unikn.knime.stud.martin.hacsort.HACSortNodeFactory"
+             id="de.unikn.knime.stud.martin.hacsort.HACSortNodeFactory">
+       </node>
+       <node
+             expert-flag="false"
+             factory-class="de.unikn.knime.stud.martin.collectionagg.CollectionAggNodeFactory"
+             id="de.unikn.knime.stud.martin.collectionagg.CollectionAggNodeFactory">
+       </node>
+       <node
+             deprecated="false"
+             factory-class="de.unikn.knime.stud.martin.simplemlp.SimpleMlpNodeFactory"
+             id="de.unikn.knime.stud.martin.simplemlp.SimpleMlpNodeFactory">
+       </node>
+       <node
+             deprecated="false"
+             factory-class="de.unikn.knime.stud.martin.randomizedensenbleloopstart.LearnersEnsembleNodeFactory"
+             id="de.unikn.knime.stud.martin.learnersensemble.LearnersEnsembleNodeFactory">
+       </node>
+       <node
+             deprecated="false"
+             factory-class="de.unikn.knime.stud.martin.NodeFactory:2"
+             id="de.unikn.knime.stud.martin.node2">
+       </node>
+        <!--<node category-path="/alex" factory-class="de.unikn.knime.stud.fillbrunn.indb.SQLGeneratorNodeFactory" id="de.unikn.knime.stud.fillbrunn.indb.SQLGeneratorNodeFactory"/>-->
+        <!--
+        <node
+              expert-flag="false"
+              factory-class="de.unikn.knime.stud.fillbrunn.mongodb.read.MongoDBReaderNodeFactory"
+              id="de.unikn.knime.stud.fillbrunn.mongodb.read.MongoDBReaderNodeFactory">
+        </node>
+        <node
+              expert-flag="false"
+              factory-class="de.unikn.knime.stud.fillbrunn.mongodb.write.MongoDBWriterNodeFactory"
+              id="de.unikn.knime.stud.fillbrunn.mongodb.write.MongoDBWriterNodeFactory">
+        </node>
+        <node
+              expert-flag="false"
+              factory-class="de.unikn.knime.stud.fillbrunn.mongodb.update.MongoDBUpdateNodeFactory"
+              id="de.unikn.knime.stud.fillbrunn.mongodb.update.MongoDBUpdateNodeFactory">
+        </node>
+        <node
+              expert-flag="false"
+              factory-class="de.unikn.knime.stud.fillbrunn.mongodb.save.MongoDBSaveNodeFactory"
+              id="de.unikn.knime.stud.fillbrunn.mongodb.save.MongoDBSaveNodeFactory">
+        </node>
+        <node
+              expert-flag="false"
+              factory-class="de.unikn.knime.stud.fillbrunn.mongodb.remove.MongoDBRemoveNodeFactory"
+              id="de.unikn.knime.stud.fillbrunn.mongodb.remove.MongoDBRemoveNodeFactory">
+        </node>
+        -->
+    </extension>
+   
+   
+   <extension point="org.knime.workbench.repository.categories">
+      <category level-id="anna" name="Anna Martin" path="/">
+      </category>
+   </extension>
+   <extension
+         point="org.knime.distmatrix.distanceMeasures">
+      <DistanceMeasure
+            factoryClass="de.unikn.knime.stud.martin.rowdistance.RowDistanceFactory"
+            id="de.unikn.knime.stud.martin.rowdistance.RowDistanceFactory">
+      </DistanceMeasure>
+   </extension>
+</plugin>

@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Anna's Nodes
+Bundle-SymbolicName: de.unikn.knime.stud.martin;singleton:=true
+Bundle-Version: 1.1.0
+Bundle-Vendor: Anna Martin, Universitaet Konstanz
+Require-Bundle: org.eclipse.core.runtime,
+ org.knime.workbench.core,
+ org.knime.base,
+ org.knime.core,
+ org.apache.commons.math3;bundle-version="3.4.1",
+ org.knime.distmatrix;bundle-version="3.1.0"
+Bundle-ActivationPolicy: lazy
+Import-Package: org.apache.commons.lang;version="2.6.0",
+ org.apache.commons.math.random
+

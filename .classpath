@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry excluding="de/unikn/knime/stud/fillbrunn/indb/|de/unikn/knime/stud/fillbrunn/mongodb/|de/unikn/knime/stud/fillbrunn/mongodb/read/|de/unikn/knime/stud/fillbrunn/mongodb/remove/|de/unikn/knime/stud/fillbrunn/mongodb/save/|de/unikn/knime/stud/fillbrunn/mongodb/update/|de/unikn/knime/stud/fillbrunn/mongodb/write/" kind="src" path="src"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
