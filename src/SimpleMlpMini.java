@@ -48,7 +48,7 @@
  * History
  *   Nov 6, 2015 (annamartin): created
  */
-package de.unikn.knime.stud.martin.simplemlp;
+
 
 import java.util.ArrayList;
 import java.util.Arrays;

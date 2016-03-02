@@ -45,14 +45,13 @@
  * History
  *   14.12.2005 (cebron): created
  */
-package de.unikn.knime.stud.martin.simplemlp;
+
 
 import java.awt.Color;
 
 import org.knime.base.node.viz.plotter.basic.BasicPlotter;
 import org.knime.base.node.viz.plotter.basic.BasicPlotterImpl;
 import org.knime.core.node.NodeView;
-
 
 /**
  * NodeView of the RProp Node. Provides an error plot.

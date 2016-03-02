@@ -48,7 +48,7 @@
  * History
  *   Jan 15, 2016 (annamartin): created
  */
-package de.unikn.knime.stud.martin.simplemlp;
+
 
 /**
  *
@@ -60,18 +60,18 @@ public interface SimpleMlp {
      * @param samplesarr
      * @param outputsarr
      */
-         void trainNetwork(Double[][] samplesarr, Double[][] outputsarr, int iteration);
+    void trainNetwork(Double[][] samplesarr, Double[][] outputsarr, int iteration);
 
     /**
      * @param doubles
      * @return
      */
-          Double[] passExample(Double[] doubles);
+    Double[] passExample(Double[] doubles);
 
     /**
      * @param sample
      * @return
      */
-          Double[] predict(Double[] sample);
+    Double[] predict(Double[] sample);
 
 }

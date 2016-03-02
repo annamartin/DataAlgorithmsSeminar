@@ -45,7 +45,7 @@
  * History
  *   27.10.2005 (cebron): created
  */
-package de.unikn.knime.stud.martin.simplemlp;
+
 
 import java.io.File;
 import java.io.FileInputStream;

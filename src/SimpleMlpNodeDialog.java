@@ -45,7 +45,7 @@
  * History
  *   26.10.2005 (cebron): created
  */
-package de.unikn.knime.stud.martin.simplemlp;
+
 
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;

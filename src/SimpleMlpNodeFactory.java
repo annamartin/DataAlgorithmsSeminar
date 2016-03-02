@@ -45,14 +45,13 @@
  * History
  *   26.10.2005 (cebron): created
  */
-package de.unikn.knime.stud.martin.simplemlp;
+
 
 import org.knime.core.node.NodeDialogPane;
 import org.knime.core.node.NodeFactory;
 
 /**
- * Factory for the SimpleMLP Node, a MultiLayerPerceptron with resilient
- * backpropagation.
+ * Factory for the SimpleMLP Node, a MultiLayerPerceptron with resilient backpropagation.
  *
  * @author
  * @since 3.0
@@ -78,8 +77,7 @@ public class SimpleMlpNodeFactory extends NodeFactory<SimpleMlpNodeModel> {
      * {@inheritDoc}
      */
     @Override
-    public SimpleMlpNodeView createNodeView(final int viewIndex,
-            final SimpleMlpNodeModel nodeModel) {
+    public SimpleMlpNodeView createNodeView(final int viewIndex, final SimpleMlpNodeModel nodeModel) {
         return new SimpleMlpNodeView(nodeModel);
     }
 
